@@ -23,4 +23,4 @@ Hey! This is my vanilla HTML/CSS/JS finance tracker built for the UI assignment.
 Open `tests.html` in your browser to run the validator checks.
 
 ## Video
-./Kooha-2026-10-14-23-12-59.mp4
+https://youtu.be/2Yg3h_-KXtk
