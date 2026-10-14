@@ -21,3 +21,6 @@ Hey! This is my vanilla HTML/CSS/JS finance tracker built for the UI assignment.
 
 ## How to Run Tests
 Open `tests.html` in your browser to run the validator checks.
+
+## Video
+./Kooha-2026-10-14-23-12-59.mp4
