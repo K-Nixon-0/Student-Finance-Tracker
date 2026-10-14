@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tests</title>
+    </head>
+
+    <body>
+        <h2>Validation Checks</h2>
+        <ul id="results"></ul>
+        <script type="module">
+            import { validateDesc, validateAmount, validateDate, checkAdvanced } from './scripts/validators.js';
+            const log = (msg, ok) => document.getElementById('results').innerHTML+= `<li>${msg}: ${ok ? 'Yes' : 'No'}</li>`;
+
+            log('Valid description', validateDesc('Coffee'));
+            log('Valid amount', validateAmount('15.50'));
+            log('Valid date', validateDate('2026-10-14'));
+            log('Duplicate word check', checkAdvanced('test test'));
+        </script>
+    </body>
+</html>

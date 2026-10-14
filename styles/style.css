@@ -1,13 +1,13 @@
 @media(max-width:768px) {aside {display: none;} main {margin-left: 0; padding: 12px;} .grid {grid-template-columns: 1fr;}}
 
 :root {
-    --bg: white;
-    --card: #fff;
-    --text: #111827;
-    --muted: rgb(86, 85, 85);
-    --primary: rgb(28, 79, 28);
-    --border: white;
-    --danger: #ef4444;
+    --bg: #f3f7f4;
+    --card: #ffffff;
+    --text: #17231d;
+    --muted: #718078;
+    --primary: #176b45;
+    --border: #e1e9e4;
+    --danger: #dc4c4c;
 }
 
 * {
