@@ -1,0 +1,89 @@
+@media(max-width:768px) {aside {display: none;} main {margin-left: 0; padding: 12px;} .grid {grid-template-columns: 1fr;}}
+
+:root {
+    --bg: white;
+    --card: #fff;
+    --text: #111827;
+    --muted: rgb(86, 85, 85);
+    --primary: rgb(28, 79, 28);
+    --border: white;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0%;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    min-height: 100vh;
+    color: var(--text);
+}
+
+aside {
+    width: 240px;
+    border-right: 1px solid var(--border);
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    background: var(-card);
+}
+
+main {
+    margin-left: 240px;
+    flex: 1;
+    padding: 24px;
+    max-width: 1000px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.dark {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+}
+
+input, select, button { padding:8px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+button {background: var(--primary); color: white; border: none; cursor: pointer; font-weight: 500;}
+table {width: 100%; border-collapse: collapse; margin-top: 10px;}
+th, td {padding: 10px; border-bottom: 1px solid var(--border); text-align: left; font-size: 0.9rem;}
+th {color: var(--muted); font-size: 0.75rem; text-transform: uppercase;}
+mark {background: #fef08a;}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background:rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display:flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
